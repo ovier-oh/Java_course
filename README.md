@@ -1,6 +1,6 @@
 # Java_course
 
-1. __Calculadora simple__: Crea una aplicación que permita realizar operaciones básicas como suma, resta, multiplicación y división. El usuario debe ingresar los números y la operación deseada, y la aplicación mostrará el resultado.
+1. __Calculator Simple__: Crea una aplicación que permita realizar operaciones básicas como suma, resta, multiplicación y división. El usuario debe ingresar los números y la operación deseada, y la aplicación mostrará el resultado.
 
 2. __Gestor de tareas__: Desarrolla una aplicación que permita a los usuarios agregar, editar y eliminar tareas. Implementa una función para marcar tareas como completadas y organiza las tareas por fecha de vencimiento. Usa la terminal para mostrar y gestionar las tareas.
 
