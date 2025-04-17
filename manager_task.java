@@ -10,8 +10,8 @@ public class manager_task {
         if (taskList.isEmpty()) {
             System.out.println("La lista está vacía.");
         } else {
-            for (String element : taskList) {
-                System.out.println(element);
+            for (int i = 1; i < taskList.size(); i++) {
+                System.out.println(i + ": " + taskList.get(i));
             }
         }
     }
@@ -44,6 +44,7 @@ public class manager_task {
                 case "3":
                     clear();
                     System.out.println("> You select Edit Task:");
+                    
                     break;
 
                 case "4":
