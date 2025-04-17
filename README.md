@@ -1,4 +1,5 @@
 # Java_course
+This repository is for create 10 project with Java. 
 
 1. __Calculator Simple__: Crea una aplicación que permita realizar operaciones básicas como suma, resta, multiplicación y división. El usuario debe ingresar los números y la operación deseada, y la aplicación mostrará el resultado.
 
