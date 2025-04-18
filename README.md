@@ -15,16 +15,16 @@ This repository is for create 10 project with Java.
         - Preguntar si desea realizar otra operación o salir.
 
 
-2. __Adivina el Número__
+2. __Guess the Number__
 
     - __Descripción__: Un juego donde el programa genera un número aleatorio y el usuario debe adivinarlo en un número limitado de intentos.
 
     - __Funcionalidades__:
 
-        - Generar un número aleatorio (ej. entre 1 y 100).
+        - [x] Generar un número aleatorio (ej. entre 1 y 100).
 
-        - Pedir al usuario que ingrese un número y dar pistas ("muy alto" o "muy bajo").
+        - [x] Pedir al usuario que ingrese un número y dar pistas ("muy alto" o "muy bajo").
 
-        - Llevar un contador de intentos.
+        - [ ] Llevar un contador de intentos.
 
-        - Mostrar un mensaje de felicitaciones si acierta, o revelar el número si pierde.
+        - [ ] Mostrar un mensaje de felicitaciones si acierta, o revelar el número si pierde.
