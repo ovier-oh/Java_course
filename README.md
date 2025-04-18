@@ -25,6 +25,4 @@ This repository is for create 10 project with Java.
 
         - [x] Pedir al usuario que ingrese un número y dar pistas ("muy alto" o "muy bajo").
 
-        - [ ] Llevar un contador de intentos.
-
-        - [ ] Mostrar un mensaje de felicitaciones si acierta, o revelar el número si pierde.
+        - [x] Llevar un contador de intentos.
