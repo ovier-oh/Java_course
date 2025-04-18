@@ -3,13 +3,28 @@ This repository is for create 10 project with Java.
 
 1. __Calculator Simple__: 
 
-- __Descripción__: Un programa que permita al usuario realizar operaciones matemáticas básicas (suma, resta, multiplicación y división) entre dos números ingresados por teclado.
+    - __Descripción__: Un programa que permita al usuario realizar operaciones matemáticas básicas (suma, resta, multiplicación y división) entre dos números ingresados por teclado.
 
-- Funcionalidades:
-    - Solicitar al usuario dos números.
+    - Funcionalidades:
+        - Solicitar al usuario dos números.
 
-    - Mostrar un menú con las operaciones disponibles.
+        - Mostrar un menú con las operaciones disponibles.
 
-    - Realizar la operación seleccionada y mostrar el resultado.
+        - Realizar la operación seleccionada y mostrar el resultado.
 
-    - Preguntar si desea realizar otra operación o salir.
+        - Preguntar si desea realizar otra operación o salir.
+
+
+2. __Adivina el Número__
+
+    - __Descripción__: Un juego donde el programa genera un número aleatorio y el usuario debe adivinarlo en un número limitado de intentos.
+
+    - __Funcionalidades__:
+
+        - Generar un número aleatorio (ej. entre 1 y 100).
+
+        - Pedir al usuario que ingrese un número y dar pistas ("muy alto" o "muy bajo").
+
+        - Llevar un contador de intentos.
+
+        - Mostrar un mensaje de felicitaciones si acierta, o revelar el número si pierde.
