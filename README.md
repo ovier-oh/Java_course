@@ -34,7 +34,7 @@ This repository is for create 10 project with Java.
 
     - __Funcionalidades__:
 
-        - [ ] Mostrar un menú con opciones: "Agregar tarea", "Ver tareas", "Eliminar tarea" y "Salir".
+        - [x] Mostrar un menú con opciones: "Agregar tarea", "Ver tareas", "Eliminar tarea" y "Salir".
 
         - [ ] Usar estructuras como arrays o listas para almacenar las tareas.
 
