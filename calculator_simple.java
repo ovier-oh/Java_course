@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class calculator_simple {
     
+    public static void clear_screen(){
+        String clear = "\\033[H\\033[2J";
+        System.out.println(clear);
+    }
+
     public static boolean repeat(Scanner scanner){
         System.out.println("Do you want repeat any operation (y/n)");
         String repeat = scanner.nextLine();
@@ -14,12 +19,12 @@ public class calculator_simple {
     }
 
     public static void main(String[] args) {
-        boolean Flag_1 = true;      // Flag for if user want to exit 
+        boolean flag_1 = true;      // Flag for if user want to exit 
         Scanner input1 = new Scanner(System.in);
         float result;
         
-        while(Flag_1){
-            System.out.print("\033[H\033[2J");
+        while(flag_1){
+            clear_screen();
             System.out.println("*** Calculator ***");
             System.out.println("> Write the first number: ");
             int number1 = input1.nextInt();
@@ -51,7 +56,7 @@ public class calculator_simple {
                     System.out.println("Invalid selection.");
                     break;
             }
-            Flag_1= repeat(input1);
+            flag_1= repeat(input1);
         }
         input1.close();
     }

@@ -22,7 +22,7 @@ public class guess_number {
                 break;
             }
             else if (number_user > num_rand){
-                try_user += 1;
+                try_user++ ;
                 System.out.println("sorry, the number you put is greater.");
                 System.out.println("Try again :D.");
                 input.nextLine(); //
