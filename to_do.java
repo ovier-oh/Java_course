@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class to_do {
     
     public static void clear_screen(){
-        //String clear = ;
-        System.out.println("\\033[H\\033[2J");
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
     public ArrayList<String> CreateListTask(){
@@ -36,13 +36,12 @@ public class to_do {
         ArrayList<String> listTasks = toDo.CreateListTask();
         
         while(bucle_temp){
-            clear_screen();
+            
             System.out.println("*** To Do list ***");
             System.out.println("[1] Show Tasks");
             System.out.println("[2] Add Task");
             System.out.println("[3] Delete Tasks");
-            //System.out.println("[4] Save Tasks");
-            System.out.println("[5] Exit.");
+            System.out.println("[4] Exit.");
             
             Scanner input = new Scanner(System.in); 
             String select_option = input.nextLine();
@@ -51,6 +50,8 @@ public class to_do {
                 case "1":
                     System.out.println(listTasks);
                     select_option = "";
+                    input.nextLine();
+                    clear_screen();
                     break;
                 
                 case "2":

@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class calculator_simple {
     
     public static void clear_screen(){
-        String clear = "\\033[H\\033[2J";
-        System.out.println(clear);
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+
     }
 
     public static boolean repeat(Scanner scanner){
