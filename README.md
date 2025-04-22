@@ -36,7 +36,9 @@ This repository is for create 10 project with Java.
 
         - [x] Mostrar un menú con opciones: "Agregar tarea", "Ver tareas", "Eliminar tarea" y "Salir".
 
-        - [ ] Usar estructuras como arrays o listas para almacenar las tareas.
+        - [x] Usar estructuras como arrays o listas para almacenar las tareas.
+        
+        - [x] Usar funciones para poder trabajar con ellas. 
 
-        - [ ] Permitir marcar tareas como completadas.
+        - [x] Permitir marcar tareas como completadas.
 
