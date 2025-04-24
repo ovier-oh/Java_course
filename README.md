@@ -49,13 +49,11 @@ This repository is for create 10 project with Java.
 
     - __Funcionalidades__:
 
-        - [ ] Mostrar un menú principal para elegir el tipo de conversión: "Temperatura", "Peso", "Longitud", "Salir".
+        - [x] Mostrar un menú principal para elegir el tipo de conversión: "Temperatura", "Peso", "Longitud", "Salir".
 
-        - [ ] Cada tipo de conversión debe abrir un submenú con las opciones disponibles, por ejemplo: "Celsius a Fahrenheit", "Kg a Libras", etc.
+        - [x] Cada tipo de conversión debe abrir un submenú con las opciones disponibles, por ejemplo: "Celsius a Fahrenheit", "Kg a Libras", etc.
 
         - [ ] Usar funciones para manejar cada tipo de conversión.
-
-        - [ ] Validar que la entrada sea un número válido.
 
         - [ ] Mostrar el resultado de forma clara con unidades.
 
