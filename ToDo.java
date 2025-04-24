@@ -46,9 +46,7 @@ public class ToDo {
             
             switch(select_option){
                 case "1":
-                    for(int i = 0; i < listTasks.size(); i++){
-                        System.out.println(i + " - " + listTasks.get(i));
-                    }
+                    System.out.println(listTasks);
                     select_option = "";
                     input.nextLine();
                     clear_screen();
@@ -81,6 +79,7 @@ public class ToDo {
         input.close();
     }
 }
+
 
 class doubleResult {
     private ArrayList<String> list;
