@@ -53,7 +53,7 @@ public class UnitConvert {
                     Temperature();
                     break;
                 case "2":
-                    Weight()
+                    Weight();
                     break;
                 case "3":
                     Length();
