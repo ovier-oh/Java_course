@@ -191,3 +191,24 @@ This repository is for create 10 project with Java.
         - [ ] Validar que no se repita la misma materia en un mismo estudiante.
 
         - [ ] (Opcional) Guardar todo en archivos para persistencia.
+
+
+
+11. __Tic Tac Toe (Console Game)__
+    - __Description:__ A console-based game for two players who take turns placing "X" and "O" on a 3x3 board. The game ends when one player wins or the board is full (a draw).
+
+    - __Function-focused approach:__ Break the game logic into individual functions to practice using parameters, return values, and control structures.
+
+        - [ ] Display the current board in the console.
+
+        - [ ] Allow players to input their move (position 1–9).
+
+        - [ ] Validate that the move is legal and the position is free.
+
+        - [ ] Alternate turns between player X and player O.
+
+        - [ ] Check for a winner after each move.
+
+        - [ ] Detect a draw if the board is full and no winner.
+
+        - [ ] Ask if players want to play again or exit.
