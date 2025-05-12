@@ -5,6 +5,8 @@ public class UnitConvert {
     public static final double CONST_KELVIN = 274.1;
     public static final double CONST_FAHREN_1 = 1.8;
     public static final double CONST_FAHREN_2 = 32;
+    public static final double CONST_CELSIUS_1 = 0.555;
+    public static Scanner input  = new Scanner(System.in);
     
     public static void ClearScreen(){
         System.out.print("\033[H\033[2J");
@@ -12,8 +14,18 @@ public class UnitConvert {
 
     }
 
-    public static void Temperature(double temp1, String convertype){
+    public static void Temperature(){
+
         ClearScreen();
+        System.out.println("[1] Celsius -> Kelvin");
+        System.out.println("[2] Celsius -> Fahrenheit");
+        System.out.println("[3] Kelvin -> Celsius");
+        System.out.println("[4] Kelvin -> Fahrenheit");
+        System.out.println("[5] Fahrenheit -> Celsius");
+        System.out.println("[6] Fahrenheit -> Kelvin");
+        String convertype = input.nextLine();
+        System.out.println("Write the temperature to convert: ");
+        double temp1 = input.nextFloat();
         switch(convertype){
             case "1":
                 temp1 = temp1 + CONST_KELVIN;
@@ -24,9 +36,24 @@ public class UnitConvert {
                 temp1 = (temp1 * CONST_FAHREN_1)  + CONST_FAHREN_2;
                 System.out.println("The temperature in Kelvin is: " + temp1);
                 break;
-
+            case "3":
+                temp1 = temp1 - CONST_KELVIN;
+                System.out.println("The temperature in Celsius is: " + temp1);
+            case "4":
+                temp1 = (temp1 - CONST_KELVIN) * CONST_FAHREN_1 + CONST_FAHREN_2;
+                System.out.println("The temperature in Fahrenheit : " + temp1);
+                break; 
+            case "5":
+                temp1 = (temp1 - CONST_FAHREN_2) * CONST_CELSIUS_1;
+                System.out.println("The temperature in Celsius is: " + temp1); 
+                break; 
+            case "6":
+                temp1 = (temp1 - CONST_FAHREN_2) * CONST_CELSIUS_1 + CONST_KELVIN;
+                System.out.println("The temperature in Keviln is: " + temp1);
+            default:
+                System.out.println("Invalid option.");
+                break;
         }
-        
     }
 
     public static void Weight(){
@@ -49,7 +76,7 @@ public class UnitConvert {
     }
     public static void main(String[] args) {
         boolean flag_1 = true;
-        Scanner input  = new Scanner(System.in);
+        
        
         
         while(flag_1){
@@ -61,16 +88,7 @@ public class UnitConvert {
 
             switch(selec_input){
                 case "1":
-                    System.out.println("[1] Celsius -> Kelvin");
-                    System.out.println("[2] Celsius -> Fahrenheit");
-                    System.out.println("[3] Kelvin -> Celsius");
-                    System.out.println("[4] Kelvin -> Fahrenheit");
-                    System.out.println("[5] Fahrenheit -> Celsius");
-                    System.out.println("[6] Fahrenheit -> Kelvin");
-                    String convertype = input.nextLine();
-                    System.out.println("Write the temperature to convert: ");
-                    float temp1 = input.nextFloat();
-                    Temperature(temp1, convertype);
+                    Temperature();
                     break;
 
                 case "2":
@@ -95,6 +113,7 @@ public class UnitConvert {
                 flag_1 = false;
             }
         }
+        input.close();
     }
     
 }
