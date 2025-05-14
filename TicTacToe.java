@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 public class TicTacToe{
-    public static int matrixtoe[][] = {{1,2,3},{4,5,6},{7,8,9}}; 
+    public static String matrixtoe[][] = {{"1","2","3"},{"4","5","6"},{"7","8","9"}}; 
     public static Scanner input = new Scanner(System.in);
     public static String player_1 = "";
     public static String player_2 = "";
@@ -32,17 +32,41 @@ public class TicTacToe{
         System.out.println("Please, Take one player [1] or [2]");
         String player = input.nextLine(); 
         if (player.equals("1")) {
-            player_1 = "Player1";
-            player_2 = "Player2";
+            player_1 = "Player1 [O]";
+            player_2 = "Player2 [X]";
         }
         if (player.equals("2")){
-            player_2 = "Player1";
-            player_1 = "Player2";
+            player_2 = "Player1 [O]";
+            player_1 = "Player2 [X]";
         }
         return new String[]{player_1, player_2};
     }
 
+    public static int[] position_select(String position){
+        switch(position){
+            case "1": return new int[]{0,0};
+            case "2": return new int[]{0,1};
+            case "3": return new int[]{0,2};
+            case "4": return new int[]{1,0};
+            case "5": return new int[]{1,1};
+            case "6": return new int[]{1,2};
+            case "7": return new int[]{2,0};
+            case "8": return new int[]{2,1};
+            case "9": return new int[]{2,2};            
+        }
+    }
     public static void game_turns(String[][] matrix, String player_1, String player_2){
+        ClearScreen();
+        System.out.println("Turns of player 1: ");
+        System.out.println("Please choose ona position: ");
+        System.out.println(matrix);
+        String position  = input.nextLine(); 
+        if(player_1.equals("Player1")){
+            int[] pos =  position_select(position);
+        }
+        
+
+
 
     }
     public static void main(String[] args){
