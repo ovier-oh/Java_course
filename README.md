@@ -199,7 +199,7 @@ This repository is for create 10 project with Java.
 
     - __Function-focused approach:__ Break the game logic into individual functions to practice using parameters, return values, and control structures.
 
-        - [ ] Display the current board in the console.
+        - [x] Display the current board in the console.
 
         - [ ] Allow players to input their move (position 1–9).
 
