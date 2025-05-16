@@ -21,11 +21,18 @@ public class TicTacToe{
         System.out.println("[Info] You only need write the number of position that you want :D");
     }
     public static void matix_tictactoe(){
-        System.out.println(matrixtoe[0][0] + " | " + matrixtoe[0][1] + " | "+ matrixtoe[0][2]);
-        System.out.println("-- " + "-- " + "--");
-        System.out.println(matrixtoe[1][0] + " | " + matrixtoe[1][1] + " | "+ matrixtoe[1][2]);
-        System.out.println("-- " + "-- " + "--");
-        System.out.println(matrixtoe[2][0] + " | " + matrixtoe[2][1] + " | "+ matrixtoe[2][2]);
+        for (int i=0; i < matrixtoe.length; i++){
+            for(int j=0; j < matrixtoe[i].length; j++){
+                System.out.print(matrixtoe[i][j]);
+                if(j < matrixtoe[i].length - 1){
+                    System.out.print(" | ");
+                }
+            }
+            System.out.println();
+            if(i < matrixtoe.length - 1){
+                System.out.println("-- -- --");
+            }
+        }
     }
 
     public static String[] players(){
@@ -52,37 +59,37 @@ public class TicTacToe{
             case "6": return new int[]{1,2};
             case "7": return new int[]{2,0};
             case "8": return new int[]{2,1};
-            case "9": return new int[]{2,2};            
+            case "9": return new int[]{2,2}; 
+            default: return null;           
         }
     }
     public static void game_turns(String[][] matrix, String player_1, String player_2){
-        ClearScreen();
+        //ClearScreen();
         System.out.println("Turns of player 1: ");
         System.out.println("Please choose ona position: ");
-        System.out.println(matrix);
+        // Crear funcion que recorra el array System.out.println(matrix);
         String position  = input.nextLine(); 
-        if(player_1.equals("Player1")){
-            int[] pos =  position_select(position);
-        }
+        //if(player_1.equals("Player1")){
+        int[] pos =  position_select(position);
+        System.out.println(pos);
+        //}
         
 
 
 
     }
     public static void main(String[] args){
-        greetings();
+        //greetings();
         matix_tictactoe();
-        input.nextLine();
-        ClearScreen();
-        String [] players = players();
-        System.out.println("You are: " + players[0]);
-        System.out.println("Other person is: " + players[1]);
-        while(loop){
+        //input.nextLine();
+        //ClearScreen();
+        //String [] players = players();
+        //System.out.println("You are: " + players[0]);
+        //System.out.println("Other person is: " + players[1]);
+        //while(loop){
             //Aqui necesito ver como es el juego 
-            game_turns(matrixtoe, player_1, player_2);
-        }
-        
-
-        
+            //game_turns(matrixtoe, player_1, player_2);
+        //}
+    
     }
 }
