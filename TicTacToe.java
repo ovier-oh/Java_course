@@ -65,6 +65,10 @@ public class TicTacToe{
 
     public static void game_turns(String player1, String currentPlayer){
         while(true){
+            
+
+
+
             System.out.println("[Info] Please look the game board, here one number is one position");
             matix_tictactoe();
             System.out.println("[Info] You only need write the number of position that you want :D");

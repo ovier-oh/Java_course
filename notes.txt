@@ -1,4 +1,4 @@
-Notes for ToDo
+Notes Vero :D
 
 Nombres de Clases y Métodos: Es una buena práctica usar nombres de clases en mayúsculas y nombres de métodos en minúsculas. Por ejemplo, cambia to_do a ToDo y CreateListTask a createListTask.
 
@@ -19,3 +19,67 @@ Comentarios y Documentación: Añadir comentarios y documentación puede ayudar 
 Validación de Entrada: Añade validación para asegurarte de que las entradas del usuario son válidas antes de procesarlas.
 
 Manejo de Excepciones: Considera manejar posibles excepciones, como cuando el usuario intenta eliminar un elemento que no existe en la lista.
+
+
+
+
+
+Notes Ovier 
+
+¡Buena pregunta! La lógica de turnos en un juego de Tic Tac Toe (Tres en línea) se basa en alternar entre dos jugadores (X y O) hasta que alguien gane o se llene el tablero.
+
+🧠 Lógica general de turnos
+Inicializar el tablero.
+Elegir quién empieza (por ejemplo, X).
+Repetir hasta que el juego termine:
+Mostrar el tablero.
+Mostrar de quién es el turno.
+Pedir al jugador que elija una posición.
+Verificar si la posición está libre.
+Colocar el símbolo (X u O).
+Verificar si hay un ganador o empate.
+Cambiar al otro jugador.
+🧩 Ejemplo básico en Java
+
+
+public static void startGame() {
+    String currentPlayer = "X";
+    int moves = 0;
+
+    while (true) {
+        matix_tictactoe(); // Mostrar el tablero
+        System.out.println("Turno del jugador: " + currentPlayer);
+        System.out.print("Elige una posición (1-9): ");
+        String inputPos = input.nextLine();
+        int[] pos = position_select(inputPos);
+
+        if (pos == null) {
+            System.out.println("[Error] Posición inválida.");
+            continue;
+        }
+
+        if (!matrixtoe[pos[0]][pos[1]].equals("X") && !matrixtoe[pos[0]][pos[1]].equals("O")) {
+            position_loc(pos, currentPlayer);
+            moves++;
+
+            if (checkWinner(currentPlayer)) {
+                matix_tictactoe();
+                System.out.println("¡Jugador " + currentPlayer + " ha ganado!");
+                break;
+            }
+
+            if (moves == 9) {
+                matix_tictactoe();
+                System.out.println("¡Empate!");
+                break;
+            }
+
+            // Cambiar de jugador
+            currentPlayer = currentPlayer.equals("X") ? "O" : "X";
+        } else {
+            System.out.println("[Error] Esa posición ya está ocupada.");
+        }
+    }
+}
+
+
